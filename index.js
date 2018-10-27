@@ -14,7 +14,6 @@ exports.decorateConfig = (config) => {
     
     const pocilloConfig = {
         height: '35px',
-        headerBg: '#383c4a',
         borderColor: '#565a67',
         marginWidth: '89px',
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -29,9 +28,6 @@ exports.decorateConfig = (config) => {
         return Object.assign({}, config, {
             css: `
                 ${config.css || ''}
-                .hyper_main {
-                    border-top: 1px solid ${pocilloConfig.borderColor} !important;
-                }
                 .header_header {
                     display: flex;
                     flex-direction: row-reverse;
@@ -43,7 +39,6 @@ exports.decorateConfig = (config) => {
                     width: calc(100% - ${pocilloConfig.marginWidth});
                     height: ${pocilloConfig.height};
                     margin-left: ${pocilloConfig.marginWidth};
-                    background-color: ${pocilloConfig.headerBg};
                     border: 0 !important;
                 }
                 .header_windowHeader .header_hamburgerMenuLeft,
@@ -74,7 +69,6 @@ exports.decorateConfig = (config) => {
                     height: ${pocilloConfig.height};
                     padding-right: 0 !important;
                     padding-left: 5px !important;
-                    background-color: ${pocilloConfig.headerBg};
                 }
                 .pocillo_actions {
                     display: flex;
@@ -129,9 +123,6 @@ exports.decorateConfig = (config) => {
         return Object.assign({}, config, {
             css: `
                 ${config.css || ''}
-                .hyper_main {
-                    border-top: 1px solid ${pocilloConfig.borderColor} !important;
-                }
                 .header_header {
                     display: flex;
                     top: 1px !important;
@@ -141,7 +132,6 @@ exports.decorateConfig = (config) => {
                 .header_windowHeader {
                     width: 100%;
                     height: ${pocilloConfig.height};
-                    background-color: ${pocilloConfig.headerBg};
                     border: 0 !important;
                 }
                 .header_windowHeader .header_hamburgerMenuLeft,
@@ -177,9 +167,6 @@ exports.decorateConfig = (config) => {
     return Object.assign({}, config, {
         css: `
             ${config.css || ''}
-            .hyper_main {
-                border-top: 1px solid ${pocilloConfig.borderColor} !important;
-            }
             .header_header {
                 display: flex;
                 top: 1px !important;
@@ -189,7 +176,6 @@ exports.decorateConfig = (config) => {
             .header_windowHeader {
                 width: calc(100% - ${pocilloConfig.marginWidth});
                 height: ${pocilloConfig.height};
-                background-color: ${pocilloConfig.headerBg};
                 border: 0 !important;
             }
             .header_windowHeader .header_hamburgerMenuLeft,
@@ -218,7 +204,6 @@ exports.decorateConfig = (config) => {
                 width: ${pocilloConfig.marginWidth};
                 height: ${pocilloConfig.height};
                 padding-right: 5px;
-                background-color: ${pocilloConfig.headerBg};
             }
             .pocillo_actions {
                 display: flex;
